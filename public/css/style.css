@@ -1,9 +1,8 @@
 body{
     width: 100%;
     height: 100vh;
-    background-color: rgba(57,58,153,255)
+    background-color: #3cb5a9;
 }
-
 section{
     display: flex;
     justify-content: center;
@@ -20,22 +19,22 @@ section{
     justify-content: center;
     align-items: center;
     gap:10px;
-    background-color: rgba(34,34,92,255)
-    ;
+    background-color: #f785c3;
 }
 
 h2,p{
     color:white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
+
+
 .allTextCriteria{
     width: 96%;
     display: flex;
     justify-content: center;
     gap:50px
-
 }
+
 .textCriteria{
     width: 70%;
     display: flex;
@@ -56,28 +55,49 @@ p{
     gap:30px
 }
 
-/* input [type="checkbox"] ::before{
-    background-color: red;
-} */
-
 img{
     width: 30px;
     height: 30px;
 }
 
 #inputuser{
-    background-color: #141436;
+    background-color:#f6bbdb;
     border-style: none;
-    /* position: relative; */
-    /* background-image: url(../src/img/icons8-coller-20.png);
-    background-repeat: no-repeat;
-    background-position: right 10%; */
-    color:white
+    position: absolute;
+    width: 100%;
+    height: 35px;
+    color:#cd6839
+}
+
+#inputuser:hover{
+    border-color: white;
+}
+
+
+i{
+    position: absolute;
+    right:5px;
+    bottom:5px;
+    font-size: 30px;
+}
+    
+i:hover{
+    cursor: pointer;
+}
+
+#clipboard{
+    position: absolute;
+    right:0;
+    background-color: aqua;
+    margin-top: 5px;
+    /* background-image: url(../src/img/Capture\ d’écran\ 2024-01-19\ à\ 09.20.33.png); */
+   
 }
 
 .putPassword{
     width: 80%;
     height: 40px;
+    position: relative;  
 }
 
 
@@ -87,14 +107,15 @@ img{
 }
 
 button{
-    color: white;
-    background-color:rgba(57,58,153,255) ;
+    color: rgb(207, 88, 88);
     border-style: none;
     width: 90%;
     height: 40px;
-    font-size: 15px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
 }
 
-/* img clipboard */
-/* rgba(57,58,153,255)
- */
+button:hover{
+    cursor: pointer;
+}

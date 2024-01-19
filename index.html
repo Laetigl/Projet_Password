@@ -5,25 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password</title>
     <link rel="stylesheet" href="./public/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 <body>
 
 <section>
     <div class="generator">
-        <h2>Password Generator</h2>
+        <h2>Cat's name Generator</h2>
         <label for="" class="putPassword">
-            <input type="text" name="inputuser" id="inputuser" style="width: 80%; height: 40px;">
-            <img src="./public/src/img/icons8-coller-60.png" alt="" id="clipboard">        
+            <input type="text" name="inputuser" id="inputuser">
+                <i class="fa-regular fa-clipboard" style="color: #e09d29;" onclick="copyPaste()"></i>
         </label>
         
         <div class="allTextCriteria">
                 <div class="textCriteria">
                     <p>Password Length</p>
-                    <p>Include uppercase letters</p>
-                    <p>Include lowercase letters</p>
-                    <p>Include numbers</p>
-                    <p>Include symbols</p>
+                    <p id="uppercaseLetters">Include uppercase letters</p>
+                    <p id="lowercaseLetters">Include lowercase letters</p>
+                    <p id="numberPassword">Include numbers</p>
+                    <p id="symbolsPassword">Include symbols</p>
                 </div>
 
                 <div class="boxCriteria">
@@ -34,7 +35,7 @@
                     <input type="checkbox" name="" id="">
                 </div>
         </div>
-        <button>Generate Password</button>
+        <button class="btn">Generate Password</button>
 
     </div>
 

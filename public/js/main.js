@@ -10,3 +10,14 @@ function passwordGenerator() {
         mdp += mixCharacters.substring(Mixnumber,Mixnumber +1)
     }
 }
+
+//-------Button clipboard
+let btnClipboard = document.getElementById("")
+
+function copyPaste() {
+    let textCopy = document.getElementById("inputuser")
+    textCopy.select //select the password generated
+
+    navigator.clipboard.writeText(textCopy.value) //take content of the field in the input
+    alert(`New cat name copied` + textCopy.value)
+}
