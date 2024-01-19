@@ -116,6 +116,10 @@ button{
     font-weight: bold;
 }
 
+.boxCriteria input{
+    accent-color: rgb(204, 0, 255);
+}
+
 button:hover{
     cursor: pointer;
 }
