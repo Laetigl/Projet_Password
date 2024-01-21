@@ -67,8 +67,7 @@ function mixCharacters() {
         }
     }
     console.log(emptyArray);
-} //peut-être faire un switch?
-// }
+}
 
 
 function lengthArray() { //function for intergrating the length of the input number into the new array
